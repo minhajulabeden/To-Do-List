@@ -1,0 +1,112 @@
+body{
+    background-color:#dbd3d3;
+    font-family: sans-serif;
+    margin: 10px;
+    animation-name:animation ;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    transition-duration: 2s;
+    transition-property: all;
+}
+@media screen and (max-width:1200px) {
+    body{
+        background-color: rgb(70, 75, 62);
+    }
+}
+@media screen and (max-width:1000px) {
+    body{
+        background-color: rgb(80, 27, 59);
+    }
+    #rectangular{
+        height: 200px;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        background-color: rgb(79, 51, 102);
+    }
+    #rectangular{
+        height: 200px;
+        background-color: rgb(226, 17, 17);
+    }
+
+}
+@media screen and (max-width:500px) {
+    body{
+        background-color: rgb(51, 94, 102);
+    }
+    
+}
+#rectangular{
+    text-align: center;
+    border: 5px solid rgba(18, 121, 161, 0.603) ;
+    background-color:burlywood;
+    border-radius: 30px;
+    height: 150px;
+    position: relative;
+}
+#todoHeader{
+    background: rgb(184, 187, 192);
+    color: rgb(71, 19, 192);
+    margin-top: 20px;
+    /* display: inline; */
+    text-align: center;
+}
+#submit{
+    background-color: rgb(191, 24, 224);
+    color: black;
+}
+#clearList{
+    background-color: rgb(124, 9, 9);
+    color: whitesmoke;
+}
+#form{
+    color: rgb(119, 24, 24);
+    margin: 0 auto;
+    border: 1px black solid;
+    padding: 5px;
+    width: 80%;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    transition-property: all;
+    transition-duration: 2s;
+}
+#unOrderList{
+    text-align: center;
+    display: inline;
+    margin: 0 auto;
+    margin-top: 30px;    
+
+}
+@media screen and (max-width:800px) {
+    #rectangular{
+        height: 200px;
+        background-color: rgb(204, 169, 188);
+    }
+    #todoHeader{
+        background-color: rgb(94, 6, 6);
+    }
+    #form{
+        font-size: 30px;
+    }
+}
+
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#submit:hover{
+    background-color: rgb(126, 19, 233);
+}
+#clearList:hover{
+    background-color: rgb(182, 29, 29);
+}
+#form:hover{
+    font-size: 20px;
+    background-color:rgb(10, 105, 74) ;
+}
